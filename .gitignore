@@ -1,15 +1,13 @@
-# Logs
+# Logs / السجلات
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+.pnpm-debug.log*
 
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-
-# Runtime data
+# Runtime data / بيانات وقت التشغيل
 pids
 *.pid
 *.seed
@@ -31,13 +29,7 @@ coverage
 # Bower dependency directory (https://bower.io/)
 bower_components
 
-# node-waf configuration
-.lock-wscript
-
-# Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
-
-# Dependency directories
+# node_modules directory / مجلد node_modules
 node_modules/
 jspm_packages/
 
@@ -56,6 +48,12 @@ web_modules/
 # Optional stylelint cache
 .stylelintcache
 
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
 # Optional REPL history
 .node_repl_history
 
@@ -65,10 +63,12 @@ web_modules/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variable files
+# dotenv environment variable files / ملفات متغيرات البيئة
 .env
-.env.*
-!.env.example
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -84,28 +84,10 @@ dist
 
 # Gatsby files
 .cache/
-# Comment in the public line in if your project uses Gatsby and not Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
-# public
+public
 
-# vuepress build output
+# Vuepress build output
 .vuepress/dist
-
-# vuepress v2.x temp and cache directory
-.temp
-.cache
-
-# Sveltekit cache directory
-.svelte-kit/
-
-# vitepress build output
-**/.vitepress/dist
-
-# vitepress cache directory
-**/.vitepress/cache
-
-# Docusaurus cache and generated files
-.docusaurus
 
 # Serverless directories
 .serverless/
@@ -116,24 +98,64 @@ dist
 # DynamoDB Local files
 .dynamodb/
 
-# Firebase cache directory
-.firebase/
-
 # TernJS port file
 .tern-port
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-# yarn v3
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
 .pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
 
-# Vite logs files
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
+# IDE and Editor files / ملفات المحررات وبيئات التطوير
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files / ملفات النظام
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build directories / مجلدات البناء
+build/
+dist/
+*.min.js
+*.min.css
+
+# Temporary files / الملفات المؤقتة
+*.tmp
+*.temp
+
+# Archive files / ملفات الأرشيف
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Image optimization cache / ذاكرة التخزين المؤقت لتحسين الصور
+.imageoptim
+
+# Local development files / ملفات التطوير المحلي
+.local/
+local.config.js
+
+# Documentation build / بناء الوثائق
+docs/build/
+
+# Storybook build outputs
+storybook-static
+
+# Temporary folders
+tmp/
+temp/
