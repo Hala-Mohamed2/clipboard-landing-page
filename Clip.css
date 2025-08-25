@@ -1,0 +1,25 @@
+.clip{
+  margin: 8rem auto;
+  text-align: center;
+  width: 600px;
+}
+
+.clip h1{
+  color: var(--Gray-700);
+}
+
+.clip p {
+  color: var(--Gray-500);
+  padding-top: 20px;
+  line-height: 1.5;
+}
+
+.clip .buttns{
+  margin-top: 3rem;
+}
+
+@media (max-width:600px) {
+  .clip{
+    padding: 0 7rem;
+  }
+}

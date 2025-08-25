@@ -1,0 +1,30 @@
+.advice{
+  padding: 4rem 0;
+  width: 600px;
+  text-align: center;
+  margin: auto ;
+}
+
+.advice h2{
+  color: var(--Gray-700);
+}
+
+.advice p {
+  color: var(--Gray-500);
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+.advice img{
+  width: 600px;
+  margin-top: 4rem;
+}
+
+@media (max-width:600px) {
+  .advice{
+    padding: 4rem 8rem;
+  }
+  .advice img{
+    width: 400px;
+  }
+}

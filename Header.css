@@ -1,0 +1,18 @@
+.header{
+  background-image: url(../../../public/images/bg-header-desktop.png);
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header img {
+  width: 90px;
+  padding-top: 8rem;
+}
+
+@media (max-width:600px) {
+  .header{
+    background-image: url(../../../public/images/bg-header-mobile.png) no-repeat;
+  }
+}
